@@ -15,5 +15,4 @@ urlpatterns = [
     path('updateAvatar', AvatarUpdate.as_view(), name="account_register"),
     path('getusers', UserList.as_view()),
     path('uploadcsv', UploadView.as_view())
-
 ]
