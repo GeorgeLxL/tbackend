@@ -10,9 +10,9 @@ urlpatterns = [
     path('signup', UserRegistrationView.as_view()),
     path('login', UserLoginView.as_view()),
     path('myadmin/login', AdminLoginView.as_view()),
-    path('getProfile', Account.as_view(), name="account_register"),
-    path('updateProfile', AccountUpdate.as_view(), name="account_register"),
-    path('updateAvatar', AvatarUpdate.as_view(), name="account_register"),
+    path('getProfile', Account.as_view()),
+    path('updateProfile', AccountUpdate.as_view()),
+    path('updateAvatar', AvatarUpdate.as_view()),
     path('getusers', UserList.as_view()),
     path('uploadcsv', UploadView.as_view())
 ]
