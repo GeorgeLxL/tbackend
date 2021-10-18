@@ -22,7 +22,7 @@ class UserRegistrationView(CreateAPIView):
     serializer_class = UserRegistrationSerializer
     permission_classes = (AllowAny,)
     def post(self, request):
-        data = request.data
+        data = request.data 
         serializer = self.serializer_class(data = data)
         serializer.is_valid(raise_exception=True)
         serializer.save()
